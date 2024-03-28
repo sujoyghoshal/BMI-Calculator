@@ -1,0 +1,29 @@
+Complete the cover story using Nodejs
+
+Task 1 : Create a Simple UI page to input the Gender, Age, Weight and Height of the user (html/javascript Page from server)
+
+Task 2 : Submit button will the hit api /calculate by using the above values, at the backed Use the formula and table below to calculate the BMI on the click on the button(endpoint data submit) in the above UI
+Formula for BMI = Weight (Kg) ÷ Height (m)*Height (m)
+Measure girl height
+If the height is 110 cm (i.e. 1.10 m) 
+Multiply 1.10 m with 1.10 m to square it
+1.10 × 1.10 = 1.21 m
+Measure Child's Weight If the Weight is = 25 Kg
+Insert both numerical in the formula BMI = 25 ÷ 1.21 =20.6 BMI
+And return the BMI, Store this information in json with Gender, Age, Weight, Height and BMI value.
+ 
+Task 3 : On the same page display the value of BMI and State, if BMI is greater than overweight and less than obesity it is considered as overweight. if BMI is greater than or equal to obesity it is obesity and if the value is less then overweight it is normal
+
+Task 4:  Create and endpoint “/getdata” to display the data stored in json file, in Page using javascript and DOM, in Tabular format. High the rows where you find Obesity
+ 
+
+Security Key
+
+Task 1: Create a json file on server to store some security keys(keys.json) as a array, and a json(users.json) to store users with properties “name, key, gender”
+
+Task 2: Create an endpoint (/getGender/:gender) to display all the documents based on Gender e.g. /getGender/male from users.json
+/getGender/female
+
+Task 3: Register a security key to the new  url, so that only users with the security key can access the url. create a json file on server to store the possible security keys. Update the endpoint to recieve the security key and verify at the backend , only then records are processed the endpoint now looks like /getSecureGender/:gender/:securitykey. All invalid/valid key logs are stored in txt file(logs.txt).
+
+Task 4: create a javascript page to hit the endpoint /logs to send the data in logs.txt as json and use DOM to display the in tabular format on UI.
